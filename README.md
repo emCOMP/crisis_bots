@@ -28,8 +28,8 @@ You can also change the number of posts checked by altering the `limit=10` value
 
 ## RedditCollector3.py
 
-Prints flattened json data for every comment in a given submission
-select the submission by altering the submission ID on this line
+Prints flattened json data for every comment in a given submission.
+Select the submission by altering the submission ID on this line:
 ```
 submission = r.get_submission(submission_id='4riq0c')
 ```
