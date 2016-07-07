@@ -21,12 +21,12 @@ This program requires you to store your private twitter API information in a sep
 Looks for trending reddit posts whose titles match the disaster terms in redditterms.txt in the subreddit of your choice, and prints the post's information to console.
 
 To select a subreddit, change `news` on this line to the subreddit of your choice:
-`submissions = p.get_subreddit('news').get_hot(limit=10)`
+```submissions = p.get_subreddit('news').get_hot(limit=10)```
 You can also change the number of posts checked by altering the `limit=10` value.
 
 ## RedditCollector3.py
 
 Prints flattened json data for every comment in a given submission
 select the submission by altering the submission ID on this line
-`submission = r.get_submission(submission_id='4riq0c')`
+```submission = r.get_submission(submission_id='4riq0c')```
 A submission's ID can be found in the URL when you visit its comment section. RedditDisasterFinder also returns thread IDs when it spots a relevant thread.
